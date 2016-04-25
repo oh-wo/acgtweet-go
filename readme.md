@@ -19,6 +19,8 @@
 1. To run the local environment `goapp serve hello.go`
  * This will start a local server running at `localhost:8080`
  * Will watch files and auto recompile.
+ * Note that there is no need for a `main()` because we use the google app engine. 
+  TODO: To make the code more portable we could include a `main` which would call `hello.go`.
 
 ## Deployment
 1. To upload to google app engine: `appcfg.py -A acgtweet -V v1 update ./`
